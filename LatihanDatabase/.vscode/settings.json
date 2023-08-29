@@ -1,0 +1,22 @@
+{
+    "editor.fontSize": 14,
+    "terminal.integrated.fontSize": 14,
+    "window.zoomLevel": 0,
+    "workbench.colorTheme": "Atom One Dark",
+    "workbench.iconTheme": "vscode-icons",
+    "files.associations": {
+        "*.embeddedhtml": "html",
+        "string": "cpp",
+        "ostream": "cpp",
+        "fstream": "cpp",
+        "iostream": "cpp",
+        "*.tcc": "cpp",
+        "iosfwd": "cpp",
+        "deque": "cpp",
+        "vector": "cpp",
+        "istream": "cpp",
+        "random": "cpp",
+        "type_traits": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "enabled",
+}

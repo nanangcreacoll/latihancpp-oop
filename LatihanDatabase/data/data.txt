@@ -1,0 +1,7 @@
+id;nama;NIM;jurusan
+1;test;test;test
+2;coba;coba;coba
+3;ucup;123456;mesin
+4;ian;3421435;kimia
+5;otong;2345123;mipa
+6;imam;4562319;teknik
