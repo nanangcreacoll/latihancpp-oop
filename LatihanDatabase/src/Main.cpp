@@ -41,7 +41,7 @@ public:
 
         DB::in.open(DB::fileName, ios::in);
         if (DB::in.is_open()) {
-            DB::in.seekg(-3,ios_base::end);
+            DB::in.seekg(-1,ios_base::end);
             bool keepLooping = true;
             while (keepLooping) {
                 char ch;
@@ -55,7 +55,7 @@ public:
                     keepLooping = false;                
                 }
                 else {                                  
-                    DB::in.seekg(-4,ios_base::cur);        
+                    DB::in.seekg(-2,ios_base::cur);        
                 }
             }   
             getline(DB::in,lastLine);

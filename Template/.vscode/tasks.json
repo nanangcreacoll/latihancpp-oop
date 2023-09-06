@@ -6,22 +6,50 @@
         {
             "label": "Compile C++",
             "type": "shell",
-            "command": "g++",
-            "args": [
+            "command": "clang++",
+            "args":[
                 "-std=c++17",
-                "./src/*.cpp",
+                "${file}",
+                "-c",
                 "-o",
-                "./bin/Main.exe",
+                "./bin/objects/${fileBasenameNoExtension}.o",
             ]
         },
         {
-            "label": "run",
+            "label": "Build",
+            "type":"shell",
+            "command": "clang++",
+            "args":[
+                "-std=c++17",
+                "./bin/objects/**.o",
+                "-o",
+                "./bin/App.exe"
+            ]
+        },
+        {
+            "label": "Run",
             "type": "shell",
-            "command": "./bin/Main.exe",
-            "dependsOn": ["Compile C++"],
+            "command": "./bin/App.exe",
+        },
+        {
+            "label": "All Build",
+            "type": "shell",
+            "command": "clang++",
+            "args": [
+                "-std=c++17",
+                "./src/**.cpp",
+                "-o",
+                "./bin/App.exe"
+            ]
+        },
+        {
+            "label": "Run + All Build",
+            "type":"shell",
+            "command":"./bin/App.exe",
+            "dependsOn":["All Build"],
             "group": {
-                "kind": "build",
-                "isDefault": true
+                "kind":"build",
+                "isDefault":true
             }
         }
     ]

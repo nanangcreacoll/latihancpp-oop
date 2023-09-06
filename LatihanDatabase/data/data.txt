@@ -5,3 +5,5 @@ id;nama;NIM;jurusan
 4;ian;3421435;kimia
 5;otong;2345123;mipa
 6;imam;4562319;teknik
+7;test;test;test
+8;test;test;test
