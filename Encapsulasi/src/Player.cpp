@@ -12,4 +12,10 @@ Player::Player(const char* name)
 void Player::display()
 {
     cout << "Player ini adalah " << this->name << endl;
+    this->weapon->display();
+}
+
+void Player::equipWeapon(Weapon* weapon)
+{
+    this->weapon = weapon;
 }
