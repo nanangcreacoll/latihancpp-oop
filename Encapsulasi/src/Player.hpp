@@ -2,6 +2,7 @@
 #define __PLAYER
 
 #include <string>
+#include <iostream>
 #include "Weapon.hpp"
 
 using namespace std;

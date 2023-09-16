@@ -2,6 +2,7 @@
 #define __WEAPON
 
 #include <string>
+#include <iostream>
 
 using namespace std;
 
@@ -14,6 +15,7 @@ class Weapon
     public:
         Weapon(const char*, double);
         void display();
+        string getName();
 };
 
 #endif

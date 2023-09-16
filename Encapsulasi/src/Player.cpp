@@ -1,8 +1,4 @@
 #include "Player.hpp"
-#include <iostream>
-
-using namespace std;
-
 
 Player::Player(const char* name)
 {
@@ -11,8 +7,8 @@ Player::Player(const char* name)
 
 void Player::display()
 {
-    cout << "Player ini adalah " << this->name << endl;
-    this->weapon->display();
+    cout << "Player ini adalah\t: " << this->name << endl;
+    cout << "Menggunakan senjata\t: " << this->weapon->getName() << endl;
 }
 
 void Player::equipWeapon(Weapon* weapon)
